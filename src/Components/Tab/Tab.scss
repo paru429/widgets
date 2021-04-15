@@ -1,0 +1,10 @@
+.tab {
+    display: flex;
+    list-style: none;
+    background: bisque;
+    border: 1px solid;
+
+    &__list {
+        margin: 1rem;
+    }
+}
