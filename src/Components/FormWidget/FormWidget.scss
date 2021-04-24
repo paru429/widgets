@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    border: 1px solid;
+    padding: 1rem;
+
+    &__submit {
+        margin-top: 1rem;
+        background: antiquewhite;
+        color: black;
+        width: 100px;
+        height: 50px;
+        border: 1px solid;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.field-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    &__box {
+        width: 200px;
+        height: 20px;
+    }
+
+    &__error{ 
+        color: red;
+    }
+}

@@ -2,9 +2,12 @@ import React from 'react';
 import Accordion from '../Accordion';
 import SearchWidget from '../SearchWidget';
 import TranslateWidget from '../TranslateWidget';
+import FormWidget from '../FormWidget';
 import Route from '../Route';
 import Tab from '../Tab';
 import './App.scss';
+
+//Add google api authentication
 
 const App = () => {
     const items = [
@@ -22,7 +25,7 @@ const App = () => {
         },
     ];
 
-    const tabItems = [{label: 'Accordion', path: '/'}, {label: 'Search', path: '/search'}, {label: 'Translate', path: '/translate'}];
+    const tabItems = [{label: 'Accordion', path: '/'}, {label: 'Search', path: '/search'}, {label: 'Translate', path: '/translate'}, {label: 'Form', path: '/form'}];
     
     return (
         <div>
@@ -35,6 +38,9 @@ const App = () => {
             </Route>
             <Route path="/translate">
                 <TranslateWidget />
+            </Route>
+            <Route path="/form">
+                <FormWidget />
             </Route>
         </div>
     );
