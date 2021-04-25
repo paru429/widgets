@@ -1,10 +1,35 @@
 .tab {
     display: flex;
-    list-style: none;
     background: bisque;
     border: 1px solid;
+    justify-content: space-between;
 
-    &__list {
-        margin: 1rem;
+    &__items-container {
+        display: flex;
+        list-style: none;
+
+        &__list {
+            margin: 1rem;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+        &__image {
+            width: 15px;
+            height: 15px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100px;
+            height: 30px;
+        }
     }
 }
