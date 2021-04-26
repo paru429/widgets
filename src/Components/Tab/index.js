@@ -37,7 +37,7 @@ const Tab = ({tabItems, signInStatus, updateSignInStatus}) => {
 
     const onSignInChange = (authInstance) => {
         updateSignInStatus(authInstance.isSignedIn.get());
-    }
+    };
 
     const onSignInClick = () => {
         authInstance.signIn();
